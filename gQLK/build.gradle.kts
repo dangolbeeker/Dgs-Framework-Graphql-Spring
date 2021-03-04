@@ -13,12 +13,14 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+	jcenter()
 }
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation("com.netflix.graphql.dgs:graphql-dgs-spring-boot-starter:latest.release")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
